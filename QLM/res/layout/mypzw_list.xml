@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:descendantFocusability="blocksDescendants"
+         >
+          <LinearLayout   
+            android:id="@+id/ull"
+                android:orientation="horizontal" android:layout_width="72dp"  
+    android:background="#DEDEDE" android:gravity="center"  
+    android:layout_height="52dp"
+     android:layout_alignParentLeft="true"
+     android:layout_marginTop="10dp"
+    >  
+         <ImageView 
+             android:id="@+id/zpimage"
+              android:layout_width="70dp"
+             android:layout_height="50dp"
+             android:src="@drawable/nopic"
+            android:scaleType="centerCrop"
+             />
+		</LinearLayout>
+		     
+		      <TextView 
+		          android:id="@+id/gsmc"
+		           android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="公司名称"
+		          android:textSize="12sp" 
+		          android:textColor="@color/black"
+		          	 android:layout_marginLeft="100dp"
+		          	 android:layout_marginTop="10dp"
+		          />
+		       <TextView
+		          android:id="@+id/zwmc"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="职位名称"
+		          android:textSize="12sp" 
+		           android:layout_below="@+id/gsmc"
+		          android:textColor="@color/black"
+		           android:layout_alignLeft="@+id/gsmc"
+		          />
+		      <TextView 
+		          android:id="@+id/zwxz"
+		           android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="￥2000-4000/月"
+		           android:layout_below="@+id/zwmc"
+		          android:textSize="10sp" 
+		          android:textColor="@color/black"
+		            android:layout_alignLeft="@+id/gsmc"
+		          />
+		      
+		      <TextView 
+		          android:id="@+id/zprs"
+		           android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		           android:layout_below="@+id/zwmc"
+		         android:layout_toRightOf="@+id/zwxz"
+		         android:layout_marginLeft="5dp"
+		          android:text="100人"
+		        android:textSize="10sp" 
+		          android:textColor="@color/black"
+		          />
+ 			 <TextView 
+		          android:id="@+id/tdcreatedate"
+		           android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		     	android:layout_alignParentRight="true"
+		     	android:layout_alignBottom="@+id/ull"
+		          android:text="2012-12-12 03:30"
+		        android:textSize="10sp" 
+		          android:textColor="@color/black"
+		          />
+ 			<RelativeLayout
+ 			    	android:id="@+id/listmenu"
+ 			    	android:layout_width="wrap_content"
+ 			    	android:layout_height="wrap_content"
+ 			     	android:layout_alignParentRight="true"
+ 			     	android:layout_centerVertical="true"
+					android:visibility="gone"
+ 			     >
+ 			    
+ 			      <Button  
+ 			        android:id="@+id/del"
+ 			        android:layout_width="60dp"
+ 			        android:layout_height="40dp"  
+ 			        android:text="删除"  
+ 			         android:textColor="@color/white"
+ 			         android:background="@drawable/btsel"
+					android:layout_alignParentRight="true"
+        			 />  
+ 			</RelativeLayout>
+ 			  
+    </RelativeLayout>

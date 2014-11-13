@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp" 
+    android:background="@color/titlebg"
+    >
+    <Button 
+        	android:id="@+id/back"
+        	android:layout_width="45dp"
+        	android:layout_height="40dp"
+        	android:background="@drawable/header_menu_back"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="20dp"
+        />
+        <Button 
+        	android:id="@+id/home"
+        	android:layout_width="55dp"
+        	android:layout_height="40dp"
+        	android:background="@drawable/header_menu_home"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="20dp"
+        />
+    
+    <TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="人才详情"
+        	android:textColor="@color/red"
+        	android:textSize="16sp"
+        	android:layout_centerVertical="true"
+        	android:layout_centerHorizontal="true"
+        />
+    
+    
+    <View 
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_alignParentBottom="true"
+        />
+    
+
+</RelativeLayout>

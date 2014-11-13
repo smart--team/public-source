@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/gotohererev"
+    android:background="@color/titlebg"
+    >
+    <RelativeLayout 
+        	android:id="@+id/titile"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:background="@color/titlebg"
+        >
+        <TextView 
+            android:id="@+id/titiletext"
+            	android:text="当前位置  到  东莞市石龙镇"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:singleLine="true"
+            	android:textColor="@color/black"
+            />
+   
+   
+   <RelativeLayout    
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+       	android:layout_centerHorizontal="true"
+       		 android:layout_marginTop="5dp"
+       		 android:layout_marginBottom="5dp"
+       		 android:padding="2dp"
+       		  android:layout_below="@+id/titiletext"
+       >
+       
+       
+       <ImageButton  
+            	android:id="@+id/busearch"
+            	android:layout_width="wrap_content"
+            	android:layout_height="50dp"
+        android:background="@null"
+        android:src="@drawable/bussel"
+        android:scaleType="fitXY"
+            android:onClick="busearch"
+              android:adjustViewBounds="true"
+            />
+	<ImageButton  
+            	android:id="@+id/driverserarch"
+            	android:layout_width="wrap_content"
+            	android:layout_height="50dp"
+           android:background="@null"
+           android:scaleType="fitXY"
+      		  android:src="@drawable/driversel"
+            android:layout_toRightOf="@+id/busearch"
+              android:onClick="driverserarch"
+                android:adjustViewBounds="true"
+            />
+        <ImageButton  
+            	android:id="@+id/walksearch"
+            	android:layout_width="wrap_content"
+            	android:layout_height="50dp"
+            	android:scaleType="fitXY"
+            	 android:background="@null"
+      		  android:src="@drawable/walksel"
+               android:layout_toRightOf="@+id/driverserarch"
+                 android:onClick="walksearch"
+                 android:adjustViewBounds="true"
+            />
+           </RelativeLayout>
+        
+    </RelativeLayout>
+    
+      <com.baidu.mapapi.map.MapView    
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:layout_below="@+id/titile"
+         />
+    
+    
+    
+
+</RelativeLayout>

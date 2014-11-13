@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/titlebg"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/showprofiles"
+    >
+    
+     <LinearLayout 
+       	android:id="@+id/loadll"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:layout_centerHorizontal="true"
+       	android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+       >
+       
+        <ProgressBar
+        android:id="@+id/loadpro"
+        android:layout_width="20dp"
+        android:layout_height="20dp" 
+       
+        />
+        <TextView 
+            	android:id="@+id/loadtext"
+				android:layout_marginTop="2dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/black"
+            	android:text="加载中.."
+            	android:layout_marginLeft="10dp"
+            
+            />
+   </LinearLayout>
+   
+     
+     
+             
+    
+   <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:id="@+id/mainsc"
+    android:visibility="gone"
+         >
+         <RelativeLayout 
+              android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+             >
+						<LinearLayout
+						    
+						    android:layout_width="match_parent"
+						    android:layout_height="wrap_content"
+							android:id="@+id/zpll"
+							android:orientation="horizontal"
+							android:weightSum="2"
+						    >
+							    <LinearLayout
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+								android:id="@+id/zp1"
+								android:orientation="vertical"
+								android:layout_weight="1"
+								android:gravity="center"
+							    >
+						  		  </LinearLayout>	
+								         <LinearLayout
+								    android:layout_width="wrap_content"
+								    android:layout_height="wrap_content"
+									android:id="@+id/zp2"
+									android:orientation="vertical"
+									android:layout_weight="1"
+									android:gravity="center"
+						    >
+						</LinearLayout>
+					</LinearLayout>
+					<RelativeLayout
+					    	android:id="@+id/footerev" 
+					    	android:layout_width="fill_parent"
+					    	android:layout_height="30dp"
+					    		 android:layout_below="@+id/zpll"
+					    >
+
+					   <ProgressBar
+			       android:id="@+id/loadprobypage"
+			       android:layout_width="30dp"
+			       android:layout_height="30dp" 
+			      android:layout_centerHorizontal="true"
+			       android:visibility="gone"
+			       
+
+			       />
+				</RelativeLayout>
+			
+      </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

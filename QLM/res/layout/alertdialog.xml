@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    <TextView 
+        	android:id="@+id/first"
+        	android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+        	android:gravity="center"
+        	android:text="第一个菜单"
+        	android:textColor="@color/black"
+        	android:textSize="16sp"
+        	android:background="@drawable/revclick3"
+        />
+    
+       
+    <View 
+        	android:id="@+id/fgx"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_below="@+id/first"
+        />
+    
+     <TextView 
+        	android:id="@+id/sen"
+        	android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+        	android:gravity="center"
+        	android:text="第二个菜单"
+        	android:textColor="@color/black"
+        	android:textSize="16sp"
+        	android:background="@drawable/revclick3"
+        	android:layout_below="@+id/fgx"
+        />
+
+</RelativeLayout>

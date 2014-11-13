@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebg"
+    android:id="@+id/myfbzwmain"
+    >
+    <LinearLayout 
+       
+       	android:id="@+id/loadll"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:layout_centerHorizontal="true"
+       	android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+       >
+       
+        <ProgressBar
+        android:id="@+id/loadpro"
+        android:layout_width="20dp"
+        android:layout_height="20dp" 
+       
+        />
+        <TextView 
+            	android:id="@+id/loadtext"
+				android:layout_marginTop="2dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/black"
+            	android:text="加载中.."
+            	android:layout_marginLeft="10dp"
+            
+            />
+   </LinearLayout>
+       <ListView
+         android:id="@+id/myfbzwlist"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_alignParentLeft="true"
+         android:background="@color/titlebg"
+         android:divider="@color/gray"
+         android:dividerHeight="0.8dp"
+         android:fadingEdge="none"
+         android:scrollingCache="false" 
+         android:visibility="gone"
+        android:layout_alignParentTop="true"
+         android:layout_above="@+id/bottomenu"
+         >
+     </ListView>
+ <LinearLayout   
+        android:id="@+id/bottomenu"  
+        android:layout_alignParentBottom="true"  
+        android:layout_height="50dp"  
+        android:layout_width="fill_parent"  
+        android:orientation="horizontal"
+        android:background="@drawable/bottom"
+        android:weightSum="2"
+        >  
+       		
+      <TextView
+          android:id="@+id/fbzw"
+          android:layout_width="wrap_content"
+           android:gravity="center"
+          android:padding="10dp"
+          android:layout_height="50dp"
+		android:layout_weight="1"
+          android:textColor="@color/red"
+          android:textSize="13sp"
+          android:singleLine="true"
+          android:text="发布职位" 
+       
+          />
+      <View 
+				       
+				        	android:layout_width="0.5dp"
+				        	android:layout_height="30dp"
+				    		  android:background="@color/gray"
+				    		  android:layout_gravity="center"
+
+				        />
+     
+				   
+            <TextView
+          android:id="@+id/mygs"
+          android:layout_width="wrap_content"
+          android:gravity="center"
+          android:padding="10dp"
+          android:layout_height="50dp"
+			android:layout_weight="1"
+          android:textColor="@color/red"
+          android:textSize="13sp"
+          android:singleLine="true"
+          android:text="我的公司" 
+          />
+      	  	
+    </LinearLayout> 
+</RelativeLayout>

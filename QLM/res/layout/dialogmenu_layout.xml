@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white"
+    >
+    
+<TextView 
+    	android:id="@+id/title"
+    	android:layout_width="270dp"
+    	android:layout_height="wrap_content"
+    	android:text="希望岗位"
+    	android:gravity="center"
+    	android:textSize="20sp"
+    	android:textColor="@color/red"
+    	android:layout_marginBottom="5dp"
+    />  
+    <View 
+   		     android:id="@+id/titlefgx"
+        	android:layout_width="270dp"
+        	android:layout_height="0.8dp"
+        	android:background="@color/red"
+        	android:layout_below="@+id/title"
+        />
+    
+       	 <ListView 
+       	     android:layout_below="@+id/titlefgx"
+         android:layout_width="270dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/menulist"
+          android:scrollingCache="false"
+          android:fadingEdge="none"
+        	android:divider="@color/gray"
+        	android:background="@color/white"
+        	android:dividerHeight="0.5dp"
+        	android:layout_marginTop="5dp"
+         >
+    </ListView>
+    
+
+</RelativeLayout>

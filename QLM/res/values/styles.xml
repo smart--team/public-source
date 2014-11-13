@@ -1,0 +1,52 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="tabhoststyle">
+        <item name="android:background">#DEDEDE</item>
+    </style>
+
+      <style name="popstyle">
+     <item name="android:windowEnterAnimation">@anim/popin</item>  
+     <item name="android:windowExitAnimation">@anim/popout</item>  
+    </style>
+    
+       <style name="popwindowstyle">
+     <item name="android:windowEnterAnimation">@anim/popwindowin</item>  
+     <item name="android:windowExitAnimation">@anim/popout</item>  
+    </style>
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">    
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>    
+        <item name="android:minHeight">31dip</item>    
+        <item name="android:maxHeight">31dip</item>    
+    </style>  
+     <style name="MyRatingBarsm" parent="@android:style/Widget.RatingBar">    
+        <item name="android:progressDrawable">@drawable/food_rating_bar_fullsm</item>    
+        <item name="android:minHeight">14dip</item>    
+        <item name="android:maxHeight">14dip</item>    
+    </style>    
+    <style name="titlestyle">
+         <item name="android:windowTitleSize">45dip</item>
+          <item name="android:windowTitleBackgroundStyle">@color/titlebg</item>
+    </style>
+    
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+</style>
+
+</resources>

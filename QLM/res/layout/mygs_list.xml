@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:descendantFocusability="blocksDescendants"
+		
+         >
+     <LinearLayout   
+            android:id="@+id/ull"
+                android:orientation="horizontal" android:layout_width="92dp"  
+    android:background="#DEDEDE" android:gravity="center"  
+    android:layout_height="72dp"
+     android:layout_alignParentLeft="true"
+     android:layout_marginTop="10dp"
+    >
+
+        <ImageView
+            android:id="@+id/zpimage"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nopic"
+            android:adjustViewBounds="true"
+             />
+
+		</LinearLayout>
+		     
+		   
+		       <TextView
+		          android:id="@+id/gsmc"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="公司名称"
+		          android:textSize="12sp"
+		          android:singleLine="true"
+		          android:textColor="@color/black"
+		          android:layout_marginTop="15dp"
+		     	 android:layout_marginLeft="120dp"
+		          />
+		      <TextView 
+		          android:id="@+id/gsdz"
+		           android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="公司地址"
+		           android:layout_below="@+id/gsmc"
+		          android:textSize="10sp" 
+		          android:textColor="@color/black"
+		          android:layout_marginTop="10dp"
+		            android:layout_alignLeft="@+id/gsmc"
+		            android:singleLine="true"
+		          />
+		      
+		    
+		      <TextView 
+		          android:id="@+id/gsjj"
+		          android:layout_marginTop="5dp"
+		           android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		           android:layout_below="@+id/gsdz"
+		           android:text="无"
+		           android:maxLines="2"
+		        android:textSize="10sp" 
+		          android:textColor="@color/black"
+		           android:layout_alignLeft="@+id/gsmc"
+		          />
+ 			    			      
+ 				<RelativeLayout
+ 			    	android:id="@+id/listmenu"
+ 			    	android:layout_width="wrap_content"
+ 			    	android:layout_height="wrap_content"
+ 			     	android:layout_alignParentRight="true"
+ 			     	android:layout_centerVertical="true"
+ 			     android:visibility="gone"
+ 			     >
+ 			    
+ 			     <Button  
+ 			        android:id="@+id/xg"
+ 			        android:layout_width="60dp"
+ 			        android:layout_height="40dp"  
+ 			        android:text="修改"  
+ 			        android:layout_toLeftOf="@+id/sc"
+ 			        android:background="@drawable/btsel"
+ 			        android:layout_marginRight="5dp"
+ 			        android:textColor="@color/white"
+        			 />  
+ 			 
+ 			      <Button  
+ 			        android:id="@+id/sc"
+ 			        android:layout_width="60dp"
+ 			        android:layout_height="40dp"  
+ 			        android:text="删除"  
+ 			         android:textColor="@color/white"
+ 			         android:background="@drawable/btsel"
+					android:layout_alignParentRight="true"
+        			 />  
+ 			</RelativeLayout>
+ 			  
+ 			  
+    </RelativeLayout>

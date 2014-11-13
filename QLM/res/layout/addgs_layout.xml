@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebg"
+	android:id="@+id/addgsrev"
+	 >
+     <LinearLayout 
+       
+       	android:id="@+id/loadll"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:layout_centerHorizontal="true"
+       	android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible"
+       >
+       
+        <ProgressBar
+        android:id="@+id/loadpro"
+        android:layout_width="20dp"
+        android:layout_height="20dp" 
+       
+        />
+        <TextView 
+            	android:id="@+id/loadtext"
+				android:layout_marginTop="2dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/black"
+            	android:text="正在定位当前位置.."
+            	android:layout_marginLeft="10dp"
+            />
+   </LinearLayout>
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:id="@+id/mainsc"
+    android:visibility="gone"
+
+         >
+      <RelativeLayout
+     android:id="@+id/content"
+     android:layout_width="fill_parent"
+     android:layout_height="match_parent"
+     android:padding="10dp" >
+        <ImageView 
+        	android:id="@+id/jbxximage"
+        	android:layout_width="17dp"
+        	android:layout_height="17dp"
+        	android:src="@drawable/store_detail_navigation"
+        	android:layout_marginTop="2dp"
+        
+        />
+     
+    <TextView 
+        	android:id="@+id/jbxxtext"
+        	android:text="基本信息"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="15sp"
+        	android:textColor="@color/red"
+        	android:layout_below="@+id/zpjj"
+        	android:layout_toRightOf="@+id/jbxximage"
+        		android:layout_marginLeft="5dp"
+        />
+            <RelativeLayout
+            android:id="@+id/jbxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jbxxtext"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/listshape"
+            android:padding="5dp" >
+
+   		  <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/namerev"
+          	android:padding="10dp"
+           >
+           
+   		      <TextView 
+   		          	android:id="@+id/gsmctext"
+   		          	android:layout_width="wrap_content"
+   		          	android:layout_height="wrap_content"
+   		          	android:text="公司名称:"
+   		          	android:textColor="@color/black"
+   		          	android:textSize="15sp"
+   		          	android:layout_centerVertical="true"
+   		          	
+   		          />
+   		 	<EditText 
+    		    	android:id="@+id/gsmc"
+    		    	android:layout_width="fill_parent"
+    		    	android:layout_height="wrap_content"
+    		    	android:maxLines="1"
+    		    	android:textSize="15sp"
+    		    	android:singleLine="true"
+    		    	android:layout_marginLeft="5dp"
+    		    	android:layout_toRightOf="@+id/gsmctext"
+    		    	android:hint="请输入公司名称"
+    		    	android:textColor="@color/black"
+    		    	android:background="@null"
+    		    	android:layout_centerVertical="true"
+    		    />
+   			
+   		
+      </RelativeLayout>  
+      	 <View 
+   		     android:id="@+id/namefgx"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_below="@+id/namerev"
+        />
+  
+   		  <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/gsdzrev"
+          	android:padding="10dp"
+          	android:layout_below="@+id/namefgx"
+          	android:gravity="center"
+           >
+        <TextView 
+   		          	android:id="@+id/gsdztext"
+   		         android:layout_width="wrap_content"
+   		          	android:layout_height="wrap_content"
+   		          	android:text="公司地址:"
+   		          	android:textColor="@color/black"
+   		          	android:textSize="15sp"
+   		          	android:layout_centerVertical="true"
+   		          />
+    		<EditText 
+    		    	android:id="@+id/gsdz"
+    		    	android:layout_width="fill_parent"
+    		    	android:layout_height="wrap_content"
+    		    	android:maxLines="1"
+    		    	android:textSize="15sp"
+    		    	android:singleLine="true"
+    		    	android:layout_marginLeft="5dp"
+    		    	android:layout_toRightOf="@+id/gsdztext"
+    		    	android:hint="这里输入公司地址"
+    		    	android:textColor="@color/black"
+    		    	android:background="@null"
+    		    	android:layout_centerVertical="true"
+    		    />
+   		
+
+
+      </RelativeLayout>
+     
+      
+	</RelativeLayout>
+	
+             <ImageView 
+        	android:id="@+id/gsjjimage"
+        	android:layout_width="17dp"
+        	android:layout_height="17dp"
+        	android:src="@drawable/store_detail_info"
+        	android:layout_marginTop="12dp"
+        	android:layout_below="@+id/jbxx"
+        
+        />
+        
+       <TextView 
+        	android:id="@+id/gsjjtext"
+        	android:text="公司简介"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="15sp"
+        	android:textColor="@color/red"
+        	android:layout_below="@+id/jbxx"
+        	android:layout_marginTop="10dp"
+        	android:layout_toRightOf="@+id/gsjjimage"
+        		android:layout_marginLeft="5dp"
+        />
+       
+       <RelativeLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/listshape"
+        	android:padding="5dp"
+        	android:id="@+id/gsjjj"
+        	android:layout_marginTop="10dp"
+        	android:layout_below="@+id/gsjjtext"
+         >
+   		 	 
+   		 <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/gsjjrev"
+          	android:padding="10dp"
+           >
+    			<EditText 
+    		    	android:id="@+id/gsjj"
+    		    	android:layout_width="fill_parent"
+    		    	android:layout_height="wrap_content"
+    		    	android:lines="5"
+    		    	android:textSize="15sp"
+    		    	android:layout_marginLeft="5dp"
+    		    	android:hint="请概要的描述下公司状况,默认无"
+    		    	android:textColor="@color/black"
+    		    	android:background="@null"
+    		    	android:gravity="top"
+    		    	android:layout_centerVertical="true"
+    		    /> 
+
+    
+      </RelativeLayout> 
+   		 </RelativeLayout>
+   		 
+       <ImageView 
+        	android:id="@+id/iphotoimage"
+        	android:layout_width="17dp"
+        	android:layout_height="17dp"
+        	android:src="@drawable/tb_camera"
+        	android:layout_marginTop="12dp"
+        	android:layout_below="@+id/gsjjj"
+        
+        />
+   	 
+       <TextView 
+        	android:id="@+id/phototext"
+        	android:text="公司相片"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="15sp"
+        	android:textColor="@color/red"
+        	android:layout_below="@+id/gsjjj"
+        	android:layout_marginTop="10dp"
+        	android:layout_toRightOf="@+id/iphotoimage"
+        	android:layout_marginLeft="5dp"
+        />	 
+        
+          <RelativeLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/listshape"
+        	android:padding="5dp"
+        	android:id="@+id/photo"
+        	android:layout_marginTop="10dp"
+        	android:layout_below="@+id/phototext"
+         >
+     		        <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/photorev"
+          	android:padding="10dp"
+          		android:background="@drawable/revclick"
+           >
+       
+    	
+
+    		<ImageView
+    		    android:id="@+id/photoimage"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="80dp"
+    		    android:scaleType="centerCrop"
+    		    android:src="@drawable/nopic" />
+    		
+    				<Button 
+        	android:id="@+id/xzphoto"
+        	android:layout_width="fill_parent"
+        	android:layout_height="40dp"
+        	android:background="@drawable/btn3"
+        	android:text="获取相片"
+        	android:textColor="@color/white"
+        	android:layout_below="@+id/photoimage"
+        	android:textSize="13sp"
+        	android:layout_marginTop="5dp"
+        	android:onClick="xzphoto"
+        />
+    
+      </RelativeLayout>
+              
+              
+   		 </RelativeLayout>
+   		 
+          
+          
+          
+          
+               <ImageView 
+        	android:id="@+id/iphotoimage2"
+        	android:layout_width="17dp"
+        	android:layout_height="17dp"
+        	android:src="@drawable/tb_camera"
+        	android:layout_marginTop="12dp"
+        	android:layout_below="@+id/photo"
+        
+        />
+   	 
+       <TextView 
+        	android:id="@+id/phototext2"
+        	android:text="营业执照"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="15sp"
+        	android:textColor="@color/red"
+        	android:layout_below="@+id/photo"
+        	android:layout_marginTop="10dp"
+        	android:layout_toRightOf="@+id/iphotoimage2"
+        	android:layout_marginLeft="5dp"
+        />	 
+        
+          <RelativeLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/listshape"
+        	android:padding="5dp"
+        	android:id="@+id/photo2"
+        	android:layout_marginTop="10dp"
+        	android:layout_below="@+id/phototext2"
+         >
+     		        <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/photorev2"
+          	android:padding="10dp"
+          		android:background="@drawable/revclick"
+           >
+       
+    	
+
+    		<ImageView
+    		    android:id="@+id/photoimage2"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="80dp"
+    		    android:scaleType="centerCrop"
+    		    android:src="@drawable/nopic" />
+    		
+    				<Button 
+        	android:id="@+id/xzphoto2"
+        	android:layout_width="fill_parent"
+        	android:layout_height="40dp"
+        	android:background="@drawable/btn3"
+        	android:text="获取相片(上传执照让信息更详细)"
+        	android:textColor="@color/white"
+        	android:layout_below="@+id/photoimage2"
+        	android:textSize="13sp"
+        	android:layout_marginTop="5dp"
+        	android:onClick="xzphoto2"
+        />
+    
+      </RelativeLayout>
+              
+              
+   		 </RelativeLayout> 
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebg"
+	android:id="@+id/personinforev"
+     >
+       <LinearLayout 
+       
+       	android:id="@+id/loadll"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:layout_centerHorizontal="true"
+       	android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible"
+       >
+       
+        <ProgressBar
+        android:id="@+id/loadpro"
+        android:layout_width="20dp"
+        android:layout_height="20dp" 
+       
+        />
+        <TextView 
+            	android:id="@+id/loadtext"
+				android:layout_marginTop="2dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/black"
+            	android:text="加载中.."
+            	android:layout_marginLeft="10dp"
+            
+            />
+   </LinearLayout>
+
+         <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:id="@+id/personinfomainsc"
+	android:layout_above="@+id/bottomenu"
+	android:visibility="gone"
+         >
+       
+ <RelativeLayout
+      android:id="@+id/content"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:padding="10dp"
+     >
+     	
+
+    <RelativeLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/listshape"
+        	android:padding="10dp"
+        	android:id="@+id/personjj"
+         >
+        
+     
+        <ImageView 
+            	android:id="@+id/proimage"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:scaleType="centerCrop"
+            	android:src="@drawable/nopic"
+
+            	android:layout_marginTop="5dp"
+            
+            />
+           <TextView 
+            	android:id="@+id/name"
+            	android:text="真是姓名"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:textSize="15sp"
+            	android:textStyle="bold"
+            	android:textColor="@color/red"
+            	android:layout_below="@+id/proimage"
+            
+            />
+     
+    </RelativeLayout>
+    
+    <TextView 
+        	android:id="@+id/persontext"
+        	android:text="人才信息"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="14sp"
+        	android:textColor="@color/black"
+        	android:layout_below="@+id/personjj"
+        	android:layout_marginTop="10dp"
+        />
+    
+        <RelativeLayout
+
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/listshape"
+        	android:padding="5dp"
+        	android:id="@+id/personxx"
+        	android:layout_below="@+id/persontext"
+        	android:layout_marginTop="10dp"
+         >
+
+   		  <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/xwgwrev"
+          	android:padding="10dp"
+          	
+           >
+       
+     <ImageView 
+         	android:id="@+id/xwgwimage"
+         	android:src="@drawable/person_android"
+         	android:layout_width="20dp"
+         	android:layout_height="20dp"
+         	android:layout_centerVertical="true"
+         />
+                 
+   
+     
+     <TextView 
+         	android:id="@+id/xwgwtext"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/xwgwimage"
+			android:text="期望职位:"
+			android:textSize="15sp"
+			android:textColor="@color/black"
+			android:layout_marginLeft="5dp"
+			
+         />
+     
+     <TextView 
+         	android:id="@+id/xwgw"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/xwgwtext"
+			android:text="普工"
+			android:textSize="15sp"
+			android:textColor="@color/black"
+			android:layout_marginLeft="5dp"
+			android:textStyle="bold"
+         />
+     <TextView 
+         	android:id="@+id/xwxz"
+         	android:text="￥2000-4000/月"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:textSize="10sp"
+         	android:layout_below="@+id/xwgwtext"
+         	android:layout_alignLeft="@+id/xwgwtext"
+         	android:textColor="@color/black"
+         />
+     
+          <TextView 
+ 			          	android:id="@+id/kb"
+ 			          	 android:layout_marginTop="2dp"
+ 			          	 android:layout_alignLeft="@+id/xwgwtext"
+ 			          	 android:layout_below="@+id/xwxz"
+ 			          	 android:layout_width="0.5dp"
+ 			          	 android:layout_height="0.5dp"
+ 			          />
+ 			      
+ 			      	<TextView 
+			  		  android:layout_marginTop="2dp"
+			    	android:id="@+id/baochi"
+			    	android:background="@drawable/btn1"
+			    	android:layout_width="30dp"
+			    	android:text="包吃"
+			    	android:textSize="9sp"
+			    	android:gravity="center"
+			    	android:textColor="@color/white"
+			    	android:layout_height="15dp"
+			    	android:layout_below="@+id/xwxz"
+			    	android:layout_toRightOf="@+id/kb"
+			    	 />
+			<TextView 
+			    android:layout_marginTop="2dp"
+			    	android:layout_below="@+id/xwxz"
+			    	android:id="@+id/baozhu"
+			    	android:layout_width="30dp"
+			    	android:layout_height="15dp"
+			    	android:background="@drawable/btn1"
+			    	android:text="包住"
+			    	android:textSize="9sp"
+			    	android:gravity="center"
+			    		android:textColor="@color/white"
+			    	android:layout_toRightOf="@+id/baochi"
+			    	 />
+			<TextView 
+			    android:layout_marginTop="2dp"
+			    	android:layout_below="@+id/xwxz"
+			    	android:id="@+id/shuangxiu"
+			    	android:layout_width="30dp"
+			    	android:background="@drawable/btn1"
+			    	android:text="双休"
+			    	android:textSize="9sp"
+			    	android:gravity="center"
+			    		android:textColor="@color/white"
+			    	android:layout_height="15dp"
+			    	android:layout_toRightOf="@+id/baozhu"
+			    	 />
+			<TextView 
+			    android:layout_marginTop="2dp"
+			    android:layout_below="@+id/xwxz"
+			    	android:id="@+id/wxyj"
+			    	android:background="@drawable/btn1"
+			    	android:text="五险一金"
+			    	android:textSize="9sp"
+			    	android:gravity="center"
+			    		android:textColor="@color/white"
+			    	android:layout_width="60dp"
+			    	android:layout_height="15dp"
+			    	android:layout_toRightOf="@+id/shuangxiu"
+			    	 />
+			
+ 			      
+      </RelativeLayout>  
+      	 <View 
+   		     android:id="@+id/xwgwfgx"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_below="@+id/xwgwrev"
+        />
+    <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/xwgzddrev"
+          	android:padding="10dp"
+          	android:layout_below="@+id/xwgwfgx"
+           >
+			  <ImageView 
+         	android:id="@+id/xwgzddimage"
+         	android:src="@drawable/store_address"
+         	android:layout_width="20dp"
+         	android:layout_height="20dp"
+         	android:layout_centerVertical="true"
+         />
+                 
+     <TextView 
+
+         	android:id="@+id/xwgzddtext"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:text="期望工作地点:"
+         	android:textSize="15sp"
+			android:textColor="@color/black"
+         	android:layout_toRightOf="@+id/xwgzddimage"
+         	android:layout_marginLeft="5dp"
+         />
+     <TextView 
+         	android:id="@+id/xwgzdd"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/xwgzddtext"
+			android:text="HK"
+			android:textSize="15sp"
+			android:textColor="@color/black"
+			android:layout_marginLeft="5dp"
+			android:textStyle="bold"
+         />
+        </RelativeLayout>
+         <View 
+   		     android:id="@+id/xwgzddfgx"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_below="@+id/xwgzddrev"
+        />
+   		  <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/xzgwrev"
+          	android:padding="10dp"
+          	android:layout_below="@+id/xwgzddfgx"
+           >
+       
+     <ImageView 
+         	android:id="@+id/xzgwimage"
+         	android:src="@drawable/store_discount"
+         	android:layout_width="20dp"
+         	android:layout_height="20dp"
+         	android:layout_centerVertical="true"
+         />
+                 
+     <TextView 
+
+         	android:id="@+id/xzgwtext"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:text="近期职位:"
+         	android:textSize="15sp"
+			android:textColor="@color/black"
+         	android:layout_toRightOf="@+id/xzgwimage"
+         	android:layout_marginLeft="5dp"
+         />
+     <TextView 
+         	android:id="@+id/xzgw"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/xzgwtext"
+			android:text="普工"
+			android:textSize="15sp"
+			android:textColor="@color/black"
+			android:layout_marginLeft="5dp"
+			android:textStyle="bold"
+         />
+      </RelativeLayout>
+      <View 
+   		     android:id="@+id/xzgwfgx"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_below="@+id/xzgwrev"
+        />
+      
+      
+
+     
+  
+   		  
+   		     <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/phonerev"
+          	android:padding="10dp"
+          	android:layout_below="@+id/xzgwfgx"
+          	android:onClick="telphone"
+          	android:background="@drawable/revclick"
+           >
+       
+     <ImageView 
+         	android:id="@+id/phoneimage"
+         	android:src="@drawable/store_detail_tel"
+         	android:layout_width="20dp"
+         	android:layout_height="20dp"
+         	android:layout_centerVertical="true"
+         />
+                 
+     <TextView 
+
+         	android:id="@+id/phonetext"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:text="邀请面试"
+         	android:textSize="15sp"
+			android:textColor="@color/black"
+         	android:layout_toRightOf="@+id/phoneimage"
+         	android:layout_marginLeft="5dp"
+         />
+     
+  
+     <ImageView 
+         	android:layout_alignParentRight="true"
+         	android:layout_centerVertical="true"
+         	android:layout_width="20dp"
+         	android:layout_height="20dp"
+         	android:src="@drawable/triangle_icon"
+         />
+      </RelativeLayout>  
+     
+        
+   		 <View 
+   		     android:id="@+id/phonefgx"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_below="@+id/phonerev"
+        />
+ 
+    
+    
+     		  <RelativeLayout
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:id="@+id/nlmsrev"
+          	android:padding="10dp"
+          	android:layout_below="@+id/phonefgx"
+           >
+       
+     <ImageView 
+         	android:id="@+id/nlmsimage"
+         	android:src="@drawable/store_detail_info"
+         	android:layout_width="20dp"
+         	android:layout_height="20dp"
+         	android:layout_centerVertical="true"
+         />
+                 
+     <TextView 
+
+         	android:id="@+id/nlmstext"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:text="能力描述"
+         	android:layout_toRightOf="@+id/nlmsimage"
+         	android:layout_marginLeft="5dp"
+         android:textSize="15sp"
+			android:textColor="@color/black"
+         />
+     
+     <TextView 
+         	android:id="@+id/nlms"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:layout_below="@+id/nlmstext"
+         	android:layout_alignLeft="@+id/nlmstext"
+         	android:text="公司简介看我拍二口额外控品味熔喷看破鄂温克破壳万人口贫困问哦贫困外婆可无评论人口为老人为"
+         	android:textSize="10sp"
+         	android:textColor="@color/black"
+
+         />
+      </RelativeLayout>  
+    
+    
+      
+   		  
+   		  
+ 	</RelativeLayout>
+     
+     
+ </RelativeLayout>
+</ScrollView>
+ <LinearLayout   
+        android:id="@+id/bottomenu"  
+        android:layout_alignParentBottom="true"  
+        android:layout_height="50dp"  
+        android:layout_width="fill_parent"  
+        android:orientation="horizontal"
+        android:background="@drawable/bottom"
+        android:weightSum="2"
+        >  
+       		
+      <TextView
+          android:id="@+id/tj"
+          android:layout_width="wrap_content"
+           android:gravity="center"
+          android:padding="10dp"
+          android:layout_height="50dp"
+		android:layout_weight="1"
+          android:textColor="@color/red"
+          android:textSize="13sp"
+          android:singleLine="true"
+          android:text="推荐给好友" 
+       
+          />
+      <View 
+				       
+				        	android:layout_width="0.5dp"
+				        	android:layout_height="30dp"
+				    		  android:background="@color/gray"
+				    		  android:layout_gravity="center"
+
+				        />
+            <TextView
+          android:id="@+id/pay"
+          android:layout_width="wrap_content"
+          android:gravity="center"
+          android:padding="10dp"
+          android:layout_height="50dp"
+			android:layout_weight="1"
+          android:textColor="@color/red"
+          android:textSize="13sp"
+          android:singleLine="true"
+          android:text="购买才币" 
+	      
+          />
+      	  	
+    </LinearLayout> 
+  
+</RelativeLayout>

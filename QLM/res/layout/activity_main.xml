@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:id="@+id/mainrev"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/titlebg"
+    >
+    
+    
+   <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="80dp"
+        android:orientation="vertical" 
+        >
+
+
+        <LinearLayout
+            android:id="@+id/mylaout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/lv_set"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+	         android:background="@drawable/index_menu_shake_bg"
+	         android:divider="@color/grey21"
+	         android:dividerHeight="0.8dp"
+	         android:fadingEdge="none"
+	         android:scrollingCache="false" 
+                >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    
+      <RelativeLayout
+          android:id="@+id/layout_right"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="@color/titlebg"
+          >
+				    
+				    
+    
+    		<RelativeLayout 
+    		    android:id="@+id/titlebar"
+    		    	   android:layout_width="fill_parent"
+   			 android:layout_height="45dp" 
+    				android:background="@color/titlebg"
+    		    
+    		    >
+    		     <Button 
+        	android:id="@+id/menuset"
+        	android:layout_width="45dp"
+        	android:layout_height="40dp"
+        	android:background="@drawable/header_menu_button"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="20dp"
+        />
+        <Button 
+        	android:id="@+id/search"
+        	android:layout_width="45dp"
+        	android:layout_height="40dp"
+        	android:background="@drawable/header_menu_search"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="20dp"
+        />
+    
+    <TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="最新招聘信息"
+        	android:textColor="@color/red"
+        	android:textSize="16sp"
+        	android:layout_centerVertical="true"
+        	android:layout_centerHorizontal="true"
+        />
+    
+    
+    <View 
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_alignParentBottom="true"
+        />
+    
+    		    
+    		</RelativeLayout>
+    
+    
+			    <RelativeLayout 
+			        	android:id="@+id/titlerev"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="50dp"
+			        	android:background="@color/titlebg"
+			        	android:layout_below="@+id/titlebar"
+			        >
+			        
+			        	<TextView 
+			        	    	android:id="@+id/fjrc"
+			        	    	android:layout_width="wrap_content"
+			        	    	android:layout_height="40dp"
+			        	    	android:text="附近人才"
+	    						android:gravity="center_vertical"
+			        	    	android:layout_centerVertical="true"
+			        	    	android:paddingLeft="10dp"
+			        	    	android:paddingRight="10dp"
+			        	    	android:textColor="@color/black"
+			        	    	android:textSize="15sp"
+			        	    	android:layout_toLeftOf="@+id/leftsp"
+			        	    />
+							        
+							 <View 
+				        	android:id="@+id/leftsp"
+				        	android:layout_width="0.5dp"
+				        	android:layout_height="25dp"
+				    		  android:background="@color/gray"
+				        	android:layout_toLeftOf="@+id/fjob"
+				        	android:layout_centerVertical="true"
+				        	android:layout_marginRight="10dp"
+				        	android:layout_marginLeft="10dp"
+				        
+				        />
+			        	<TextView 
+			        	    	android:id="@+id/fjob"
+			        	    	android:layout_width="wrap_content"
+			        	    	android:layout_height="40dp"
+			        	    	android:text="附近职位"
+	    						android:gravity="center_vertical"
+			        	    	android:layout_centerVertical="true"
+			        	    	android:paddingLeft="10dp"
+			        	    	android:paddingRight="10dp"
+			        	    	android:layout_centerHorizontal="true"
+			        	    	android:textColor="@color/black"
+			        	    	android:textSize="15sp"
+			        	    />
+			   	        
+							 <View 
+				        	android:id="@+id/rightsp"
+				        	android:layout_width="0.5dp"
+				        	android:layout_height="25dp"
+				    		  android:background="@color/gray"
+				        	android:layout_toRightOf="@+id/fjob"
+				        	android:layout_centerVertical="true"
+				        	android:layout_marginRight="10dp"
+				        	android:layout_marginLeft="10dp"
+				        
+				        />
+							 
+							 
+			        	<TextView 
+			        	    	android:id="@+id/othercity"
+			        	    	android:layout_width="wrap_content"
+			        	    	android:layout_height="40dp"
+			        	    	android:text="切换城市"
+	    						android:gravity="center_vertical"
+			        	    	android:paddingLeft="10dp"
+			        	    	android:paddingRight="10dp"
+			        	    	android:textColor="@color/black"
+			        	    	android:textSize="15sp"
+			        	    	android:layout_centerVertical="true"
+			        	    	android:layout_toRightOf="@+id/rightsp"
+			        	    />
+			    </RelativeLayout>
+             
+    <View 
+        	android:id="@+id/titlefgx"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+      android:background="@color/gray"
+        	android:layout_below="@+id/titlerev"
+        
+        />
+  
+   <LinearLayout 
+       
+       	android:id="@+id/loadll"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:layout_centerHorizontal="true"
+       	android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+       >
+       
+        <ProgressBar
+        android:id="@+id/loadpro"
+        android:layout_width="20dp"
+        android:layout_height="20dp" 
+       
+        />
+        <TextView 
+            	android:id="@+id/loadtext"
+				android:layout_marginTop="2dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/black"
+            	android:text="加载中.."
+            	android:layout_marginLeft="10dp"
+            
+            />
+   </LinearLayout>
+  <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:id="@+id/mainsc"
+    android:visibility="gone"
+    android:layout_below="@+id/titlerev"
+
+         >
+         <RelativeLayout 
+              android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+             >
+						<LinearLayout
+						    
+						    android:layout_width="match_parent"
+						    android:layout_height="wrap_content"
+							android:id="@+id/zpll"
+							android:orientation="horizontal"
+							android:weightSum="2"
+						    >
+							    <LinearLayout
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+								android:id="@+id/zp1"
+								android:orientation="vertical"
+								android:layout_weight="1"
+								android:gravity="center"
+							    >
+						  		  </LinearLayout>	
+								         <LinearLayout
+								    android:layout_width="wrap_content"
+								    android:layout_height="wrap_content"
+									android:id="@+id/zp2"
+									android:orientation="vertical"
+									android:layout_weight="1"
+									android:gravity="center"
+						    >
+						</LinearLayout>
+					</LinearLayout>
+					<RelativeLayout
+					    	android:id="@+id/footerev" 
+					    	android:layout_width="fill_parent"
+					    	android:layout_height="30dp"
+					    		 android:layout_below="@+id/zpll"
+					    >
+
+					   <ProgressBar
+			       android:id="@+id/loadprobypage"
+			       android:layout_width="30dp"
+			       android:layout_height="30dp" 
+			      android:layout_centerHorizontal="true"
+			       android:visibility="gone"
+			       
+
+			       />
+				</RelativeLayout>
+		
+      </RelativeLayout>
+</ScrollView>
+
+  <RelativeLayout
+      android:id="@+id/bottomenu"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/camera_bar"
+    android:layout_alignParentBottom="true"
+     >
+			
+      <TextView
+          android:id="@+id/myjob"
+          android:layout_width="wrap_content"
+          android:gravity="center_vertical"
+          android:padding="10dp"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:textColor="@color/red"
+          android:textSize="13sp"
+          android:singleLine="true"
+          android:text="我应聘的职位" 
+          android:layout_toLeftOf="@+id/space"
+          android:layout_marginRight="15dp"
+          />
+      	  	
+      		<TextView
+      		    android:id="@+id/space"
+      		    android:layout_width="50dp"
+      		    android:layout_height="60dp"
+      		    android:layout_alignParentBottom="true"
+      		    android:layout_centerHorizontal="true" />
+ 		<TextView
+          android:id="@+id/myzp"
+          android:layout_width="wrap_content"
+          android:gravity="center_vertical"
+          android:padding="10dp"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:textColor="@color/red"
+          android:textSize="13sp"
+          android:singleLine="true"
+          android:text="我发布的职位" 
+          android:layout_toRightOf="@+id/space"
+          android:layout_marginLeft="15dp"
+          />
+</RelativeLayout>
+				    	
+				   
+  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keyue.qlm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.keyue.qlm.activity.WelcomeActivity"
+         	 android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.MainActivity"
+           android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+					<action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+			</intent-filter>
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.ZpInfoDetail"
+           android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.MyYpZw"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.MyFbZw"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.NearByJob"
+           android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.NearByPerson"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.PersonInfo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.OtherCityByJob"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.SelectCity"
+             android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.OtherCityByPerson"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.AddProfile"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.AddPosition"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.Img_control"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.GoToHere"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.SearchJob"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.SearchJobQuery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.LoginReg"
+           android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.MyProFiles"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.MyGs"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.AddGs"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.ShowProfiles"
+           android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.PositionComment"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.AddComment"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.keyue.qlm.activity.Pay"
+             android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+          <activity
+            android:name="com.keyue.qlm.activity.UserInfo"
+             android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+           <activity
+            android:name="com.keyue.qlm.activity.FeedBack"
+             android:configChanges="keyboardHidden|orientation"
+            android:label="主页"
+            android:screenOrientation="portrait"
+            android:theme="@style/titlestyle" >
+        </activity>
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:screenOrientation="portrait"/>
+	<activity
+        android:name="com.tencent.tauth.AuthActivity"
+        android:noHistory="true"
+        android:launchMode="singleTask" >
+    <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+			<category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="101048163" />
+     </intent-filter>
+</activity>
+			
+  	<service android:name=".service.DefaultService"
+  	    android:process=":remote"
+  	    android:permission="android.permission.DEFAULT_SERVUCE"
+  	    android:enabled="true"
+  	    >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.4" >
+                </action>
+            </intent-filter>
+        </service>
+      
+    </application>
+
+</manifest>

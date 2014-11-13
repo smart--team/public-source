@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp" 
+    android:background="@color/titlebg"
+    >
+    <Button 
+        	android:id="@+id/back"
+        	android:layout_width="45dp"
+        	android:layout_height="40dp"
+        	android:background="@drawable/header_menu_back"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="20dp"
+        />
+        <Button 
+        	android:id="@+id/ok"
+        	android:layout_width="70dp"
+        	android:layout_height="28dp"
+        	android:background="@drawable/btn1"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="20dp"
+        	android:text="完成"
+        	android:textColor="@color/white"
+        	android:textSize="13sp"
+        />
+    
+    <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"
+        	android:padding="2dp"
+         >
+           <Button 
+        	android:id="@+id/logintext"
+        	android:layout_width="60dp"
+        	android:layout_height="30dp"
+        	android:background="@drawable/left_off"
+        	android:text="登录"
+        	android:gravity="center"
+        	android:textColor="@color/white"
+        	android:textSize="12sp"
+        />
+           <Button 
+        	android:id="@+id/regtext"
+        	android:layout_width="60dp"
+        	android:layout_height="30dp"
+        	android:background="@drawable/right_off"
+        	android:text="注册"
+        	android:gravity="center"
+        	android:textColor="@color/white"
+        	android:textSize="12sp"
+        />
+       
+    </LinearLayout>
+ 
+    
+    <View 
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.8dp"
+        	android:background="@color/gray"
+        	android:layout_alignParentBottom="true"
+        />
+    
+
+</RelativeLayout>

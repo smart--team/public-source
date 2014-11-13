@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebg"
+    android:padding="10dp"
+    android:id="@+id/searchjobrev"
+     >
+     <LinearLayout 
+       
+       	android:id="@+id/loadll"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:layout_centerHorizontal="true"
+       	android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible"
+       >
+       
+        <ProgressBar
+        android:id="@+id/loadpro"
+        android:layout_width="20dp"
+        android:layout_height="20dp" 
+       
+        />
+        <TextView 
+            	android:id="@+id/loadtext"
+				android:layout_marginTop="2dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/black"
+            	android:text="加载中.."
+            	android:layout_marginLeft="10dp"
+            
+            />
+   </LinearLayout> 
+   <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:id="@+id/mainsc"
+
+         >
+    <RelativeLayout 
+        	android:id="@+id/contentrev"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:visibility="gone"
+        >
+    <EditText 
+        	android:id="@+id/searchtj"
+        	android:layout_marginTop="10dp"
+        	android:layout_width="fill_parent"
+        	android:layout_height="35dp"
+        	android:drawableLeft="@drawable/search_icon"
+        	android:padding="5dp"
+        	android:textSize="12sp"
+        	android:hint="搜索职位，公司名"
+        />
+    
+    
+    <TextView 
+        	android:id="@+id/hotzw"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#B5B5B5"
+        	android:text="热门职位"
+        	android:layout_below="@+id/searchtj"
+        	android:layout_marginTop="20dp"
+        	android:textSize="15sp"
+        />
+    
+    <com.keyue.qlm.util.PredicateLayout
+        	android:id="@+id/hotzwbk"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/hotzw"
+        	>
+        
+      
+       
+        
+    </com.keyue.qlm.util.PredicateLayout>
+    
+    
+     <TextView 
+        	android:id="@+id/hotgs"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#B5B5B5"
+        	android:text="热门公司"
+        	android:layout_below="@+id/hotzwbk"
+        	android:layout_marginTop="20dp"
+        	android:textSize="15sp"
+        />
+    
+    <com.keyue.qlm.util.PredicateLayout
+        	android:id="@+id/hotgsbk"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/hotgs"
+        	>
+  </com.keyue.qlm.util.PredicateLayout>
+    
+</RelativeLayout>
+
+    	
+</ScrollView>    
+</RelativeLayout>
