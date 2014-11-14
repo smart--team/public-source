@@ -78,6 +78,5 @@ public class User  implements Serializable{
 	public void setUsercb(double usercb) {
 		this.usercb = usercb;
 	}
-	
-	//��ͻ��
+	//SDF2344444444444
 }
