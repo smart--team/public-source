@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class User  implements Serializable{
 
 	/**
-	 *#sdfsdfsfsdfs235343434232332sfdskfjkjfdsdfdsfsff13123123
+	 * #sdfsdfsfsdfs235343434232332sfdskfjkjfdsdfdsfsff
 	 */
 	private static final long serialVersionUID = 1L;
 	private String userid;
@@ -79,5 +79,5 @@ public class User  implements Serializable{
 		this.usercb = usercb;
 	}
 	
-	
+	//��ͻ��
 }
