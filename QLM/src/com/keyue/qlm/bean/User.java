@@ -79,5 +79,5 @@ public class User  implements Serializable{
 		this.usercb = usercb;
 	}
 	
-	
+	//³åÍ»ÐÐ
 }
