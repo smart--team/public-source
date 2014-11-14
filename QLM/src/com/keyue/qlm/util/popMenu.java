@@ -84,6 +84,7 @@ public class popMenu {
 			map.put("contentname", objects[i]);
 			data.add(map);
 		}
+		//服务器修改的第一个版本
 		return data;
 	}
 
